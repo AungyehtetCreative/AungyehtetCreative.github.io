@@ -8,6 +8,7 @@
  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
  <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="splide/css/splide.min.css">
 </head>
 <body>
 <!-- Navigation -->
@@ -145,6 +146,70 @@
       </div>
     </div>
    </div>
+      <!-- Albout -->
+    
+    <div class="row mt-5">
+      <div class="offset-lg-5 col-md-2">
+      <h1 class="text-center">Albums</h1>
+      <hr class="border border-dark mt-0">
+    </div>
+   </div>
+   
+<div class="row mt-5">
+        <section class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="images/alb1.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb2.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb3.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb4.jpeg" alt="" cass="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb5.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb6.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb7.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb8.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb9.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb10.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb11.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb12.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb13.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb14.jpeg" alt="" class="img-fluid"/>
+              </li>
+              <li class="splide__slide">
+                <img src="images/alb15.jpeg" alt="" class="img-fluid"/>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+</div>
+   </div>
   <!-- Song1 Modal -->
   <div class="modal fade" id="sg1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -245,5 +310,15 @@
     
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/type-text.js"></script>
+    <script src="splide/js/splide.min.js"></script>
+     <script>
+      var splide = new Splide('.splide', {
+        type: 'loop',
+        perPage: 5,
+        rewind: true,
+      });
+
+      splide.mount();
+    </script>
 </body>
 </html>
